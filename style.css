@@ -1,0 +1,31 @@
+/* 'margin' espaços ao redor de uma página */
+body {
+  margin: 0;
+}
+
+/*conceitos de boxmodel */
+/* toda caixa tem conteúdo (largura e altura), preenchimento interno, bordas e espaços fora da caixa */
+/* 'padding' é o preenchimento interno de dentro da caixa */
+
+.page {
+  width: 1000px;  /*largura da caixa */
+  margin: 65px auto 0;
+}
+
+/* main axis ou eixo principal é em uma linha orizontal */
+
+ /* caixa flexivel,agrupa os elementos na mesma mesma caixa podendo alinhar os elementos contidos dentro dela de diversas formas, usando propriedades e valores */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 55px;
+}
+
+ul {
+  display: flex;
+  list-style: none; /* tira o estilo padrão da lista com o 'none' */
+  gap: 48px; /* espaços entre os elementos */
+  margin: 0;
+  padding: 0;
+}
