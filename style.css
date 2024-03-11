@@ -1,7 +1,9 @@
 /* 'margin' espaços ao redor de uma página */
 body {
   margin: 0;
+  font-family: "Open Sans", sans-serif;
 }
+
 
 /*conceitos de boxmodel */
 /* toda caixa tem conteúdo (largura e altura), preenchimento interno, bordas e espaços fora da caixa */
@@ -14,18 +16,71 @@ body {
 
 /* main axis ou eixo principal é em uma linha orizontal */
 
- /* caixa flexivel,agrupa os elementos na mesma mesma caixa podendo alinhar os elementos contidos dentro dela de diversas formas, usando propriedades e valores */
+/* caixa flexivel,agrupa os elementos na mesma mesma caixa podendo alinhar os elementos contidos dentro dela de diversas formas, usando propriedades e valores */
 nav {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   margin-bottom: 55px;
+  align-items: center;
 }
 
 ul {
+  font-family: "Mulish", sans-serif;
   display: flex;
   list-style: none; /* tira o estilo padrão da lista com o 'none' */
   gap: 48px; /* espaços entre os elementos */
   margin: 0;
   padding: 0;
+}
+
+a {
+  color: #1F1534;
+  text-decoration: none;
+}
+
+
+/*pseudo class é quando passa o mouse em cima do botão e muda sua propriedade*/
+ul li a:hover {
+  font-weight: bold;
+  color: #1F1534;
+  text-decoration: underline;
+  
+}
+
+
+
+h1 {
+  font-family: "Mulish", sans-serif;
+  font-size: 49px;
+  color:  #1F1534;
+  font-weight: normal;
+  line-height: 56px;
+  width: 490px;
+}
+
+h1 span {
+  color: #89C5CC;
+  font-weight: bold;
+}
+
+p {
+  font-size: 14px;
+  line-height: 28px; /* largura da linhas */
+  color: #7D7987;
+}
+
+button {
+  text-transform: uppercase; 
+  font-family: "Open Sans", sans-serif;
+}
+
+footer {
+  font-size: 14px;
+  line-height: 28px;
+
+}
+
+
+footer a {
+  font-weight: bold;
 }
