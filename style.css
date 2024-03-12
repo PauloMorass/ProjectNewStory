@@ -47,12 +47,16 @@ a {
 }
 
 
+ul li a {
+  opacity: 0.5; /* uma propriedade que aumenta a visibilidade texto, deixando não visível '0' e 100% visível '1'. */
+}
+
 /*pseudo class é quando passa o mouse em cima do botão e muda sua propriedade*/
 ul li a:hover {
   font-weight: bold;
   color: #1F1534;
   text-decoration: underline;
-  
+  opacity: 1;
 }
 
 
@@ -73,7 +77,6 @@ h1 span {
 
 main {
   display: flex;
-  border: 1px solid red;
   justify-content: space-between;
   align-items: center;
 }
