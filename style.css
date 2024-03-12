@@ -1,7 +1,14 @@
 /* 'margin' espaços ao redor de uma página */
+/* linear gradient generator css site de cores para gradient */
+/*'()' é como se fosse uma função dando as instruções de como irá funcionar*/
+/* 'deg' é 'graus' rotação de 0, 90graus, 180graus, 270 e 360graus */
+/* rgba é uma função que passa instruções, suas cores são (red, green, blue e alpha) 0 é preto absoluto e 255 é branco absoluto, cada junção dessas cores cria uma nova cor, 0 e 1 do alpha é opaco há transparente ou seja visível e não visível*/ 
+/* o gradient junta as dois rgba para juntar as cores */
 body {
   margin: 0;
   font-family: "Open Sans", sans-serif;
+  background: linear-gradient(180deg, rgba(227, 255, 248, 0) 82.08%, rgba(227,255, 248, 0.38 ) 100%); 
+  min-height: 100vh; /* viewportheight pega os 100 pedaços da pagina e ocupa todo esse espaço para ajustar altura ao tamanho da largura, o 'min' é como se coloca-se uma regra que no minímo tenha essa altura e que se tiver dispostivos maiores ou mais conteúdos ela se adaptar e aumentar ainda mais essa altura*/
 }
 
 
@@ -11,7 +18,8 @@ body {
 
 .page {
   width: 1000px;  /*largura da caixa */
-  margin: 65px auto 0;
+  padding-top: 65px;
+  margin: 0 auto ;
 }
 
 /* main axis ou eixo principal é em uma linha orizontal */
@@ -106,4 +114,10 @@ footer {
 
 footer a {
   font-weight: bold;
+}
+
+#balls {
+  position: fixed;
+  bottom: 0;
+  right: 0;
 }
